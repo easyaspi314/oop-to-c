@@ -20,7 +20,7 @@
 - (void) DoSomething : (int) value
 {
     [self x] = value;
-    NSLog(@"x is %d", [self x]);
+    NSLog(@"x is equal to %d", [self x]);
     [self DoSomethingElse];
 }
 

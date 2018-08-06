@@ -17,7 +17,7 @@ public:
 void Lesson1::DoSomething(int value)
 {
     x = value;
-    std::cout << "x = " << x << "\n";
+    std::cout << "x is equal to " << x << "\n";
     DoSomethingElse();
 }
 

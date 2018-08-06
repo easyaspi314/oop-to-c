@@ -7,7 +7,7 @@ public class Lesson1 {
 
     public void DoSomething(int value) {
         x = value;
-        System.out.println("x = " + x);
+        System.out.println("x is equal to " + x);
         DoSomethingElse();
     }
 
