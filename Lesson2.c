@@ -63,9 +63,11 @@ void Lesson2_Ctor(struct Lesson2 *this)
     if (!this->DoSomething)
         this->DoSomething = (MemberFn *)&Lesson2_DoSomething;
 
+    /*
      * Call the parent's ctor, think of it like super.
      * We cast to Lesson2Base which is safe because the top
      * of Lesson2 is the same as Lesson2Base.
+     */
     Lesson2Base_Ctor((struct Lesson2Base *)this);
     puts("    Lesson2 ctor called!\n");
 }
