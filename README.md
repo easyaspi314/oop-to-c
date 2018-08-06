@@ -17,7 +17,7 @@ functionally equivalent.
 
 Verbose comments have been added.
 
-# Differences between c
+# Differences between C
 
 ### General
 
@@ -27,7 +27,7 @@ hold data members in a group.
 Member functions don't exist. They are simulated by passing
 a pointer to the struct itself as a parameter.
 
-Constructora and destructors don't exist.
+Constructors and destructors don't exist.
 
 `static` has an entirely different meaning.
 
