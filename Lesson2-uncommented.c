@@ -41,7 +41,7 @@ void Lesson2_Ctor(struct Lesson2 *this)
     puts("    Lesson2 ctor called!\n");
 }
 
-int main()
+int main(void)
 {
     puts("Lesson2:");
     struct Lesson2 *l2 = calloc(1, sizeof(struct Lesson2));

@@ -38,6 +38,7 @@ void Lesson2Base_DoSomething(struct Lesson2Base *this)
 {
     puts("    Lesson2Base DoSomething called!\n");
 }
+
 void Lesson2_DoSomething(struct Lesson2 *this)
 {
     puts("    Lesson2 DoSomething called!\n");
@@ -72,7 +73,7 @@ void Lesson2_Ctor(struct Lesson2 *this)
     puts("    Lesson2 ctor called!\n");
 }
 
-int main()
+int main(void)
 {
     puts("Lesson2:");
     /*
