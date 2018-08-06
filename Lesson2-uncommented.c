@@ -27,7 +27,7 @@ void Lesson2_DoSomething(struct Lesson2 *this)
 void Lesson2Base_Ctor(struct Lesson2Base *this)
 {
     if (!this->DoSomething)
-        this->DoSomething = (void (*)(void *) *)&Lesson2Base_DoSomething;
+        this->DoSomething = (void (*)(void *))&Lesson2Base_DoSomething;
 
     puts("    Lesson2Base ctor called!\n");
 }
@@ -35,7 +35,7 @@ void Lesson2Base_Ctor(struct Lesson2Base *this)
 void Lesson2_Ctor(struct Lesson2 *this)
 {
     if (!this->DoSomething)
-        this->DoSomething = (void (*)(void *) *)&Lesson2_DoSomething;
+        this->DoSomething = (void (*)(void *))&Lesson2_DoSomething;
 
     Lesson2Base_Ctor((struct Lesson2Base *)this);
     puts("    Lesson2 ctor called!\n");
