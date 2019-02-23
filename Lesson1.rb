@@ -7,7 +7,7 @@ class Lesson1
         @x = x
     end
 
-    def DoSomethingElse()
+    def DoSomethingElse
         puts 'DoSomethingElse'
     end
 
@@ -18,5 +18,5 @@ class Lesson1
     end
 end
 
-obj = Lesson1.new()
-obj.DoSomething(4)
+obj = Lesson1.new
+obj.DoSomething 4

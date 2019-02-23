@@ -177,6 +177,10 @@ Formatting strings is a little tricky.
 
 And arrays don't contain a `.length`.
 
+All startup must begin in the `main` function.
+
+Ruby: All function calls and declarations require parentheses.
+
 # License
 
 All of these source files are released under the MIT license,
