@@ -1,21 +1,22 @@
 # OOP in C
 Showing how object-oriented languages truly work by showing equivalent C.
 
-C is the most powerful language. It is capable of doing
-virtually *anything*…except you usually have to do it manually.
+C is a very powerful language. It is capable of doing
+virtually *anything*…except you usually have to do it yourself. :)
 
-That is why object-oriented languages like C++, Java, and ObjC
-were created, to make the equivalent code easier.
+That is why object-oriented languages like C++, Java, Python, Ruby,
+and ObjC were created, to make the equivalent code easier.
 
 The Lesson1 and Lesson2 files show basic object-oriented
-source files in C++, Java, and Objective-C (more languages soon,
-PRs welcome), and how they work out manually in C.
+source files in C++, Java, Ruby, Python, and Objective-C
+(more languages soon, PRs welcome), and how they work out manually in C.
 
 The C++ code compiles almost literally to the C source, but
 the others use calls to the JDK or `objc_msgSend` and are just
 functionally equivalent.
 
-Verbose comments have been added.
+Verbose comments have been added, however, uncommented versions
+are also available.
 
 # Differences between C
 
@@ -115,6 +116,66 @@ Syntax is C-style, using the same syntax as `NSLog`,
 
 …
 
+### Python and Ruby
+
+The syntax is weird on C if you are used to Python. Everything needs a semicolon,
+and indentation is just aesthetic. **Make sure you have braces around your if/while/for
+statements:**
+
+```c
+if (foo == bar)
+    doSomething();
+    doSomethingElse();
+```
+
+is parsed as this:
+```c
+if (foo == bar) {
+    doSomething();
+}
+doSomethingElse(); // always executed
+```
+
+In Ruby, `end` is basically `}`, and in Python, it is the end of an indentation.
+
+Everything needs a type when first declared:
+
+```c
+int x = 0;
+void foo(int x, int y) {}
+```
+
+Just like Java, it is important to read about pointers.
+
+Strings use double quotes, single letters use single quotes.
+
+Comments are like this:
+
+```c
+/*
+block
+comment
+*/
+// line comment (a #comment
+```
+
+Lines starting with a `#` are for the preprocessor.
+
+// is a comment. Integer division uses a single slash, and float division only
+occurs when one type is explicitly float or double.
+
+Structs (C's "classes") need their members declared before. There is no
+`self.anything`.
+
+```c
+struct Foo {
+    int x;
+};
+```
+
+Formatting strings is a little tricky.
+
+And arrays don't contain a `.length`.
 
 # License
 
